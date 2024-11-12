@@ -45,15 +45,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AuthorizationCommands\LoginCommand.cs" />
+    <Compile Include="Commands\AuthorizationCommands\RegistrationCommand.cs" />
     <Compile Include="Constants.cs" />
+    <Compile Include="Databases\IQuestionDB.cs" />
+    <Compile Include="Databases\IUserDB.cs" />
+    <Compile Include="Databases\QuestionDB.cs" />
+    <Compile Include="Databases\UserDB.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\QuizResult.cs" />
     <Compile Include="Entities\Topics.cs" />
     <Compile Include="Entities\User.cs" />
+    <Compile Include="Exceptions\BackToPreviousMenuException.cs" />
     <Compile Include="Exceptions\QuizInterruptedException.cs" />
+    <Compile Include="Helpers\BeforeEnterTextFromConsoleWriter.cs" />
     <Compile Include="Helpers\ConsoleColorTextWriter.cs" />
+    <Compile Include="Helpers\ConsoleUserDataReader.cs" />
     <Compile Include="Helpers\ConsoleWaiting.cs" />
     <Compile Include="Helpers\IColorTextWriter.cs" />
+    <Compile Include="Helpers\ITextEncryptor.cs" />
+    <Compile Include="Helpers\IUserDataReader.cs" />
+    <Compile Include="Helpers\Sha256TextEncryptor.cs" />
     <Compile Include="Menus\ConsoleMenu\ConsoleMenu.cs" />
     <Compile Include="Menus\ConsoleMenu\ConsoleMenuSelector.cs" />
     <Compile Include="Menus\ConsoleMenu\ConsoleMenuWriter.cs" />
@@ -74,8 +86,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Commands\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

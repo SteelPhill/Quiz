@@ -1,4 +1,5 @@
-﻿using Quiz.Helpers;
+﻿using Quiz.Exceptions;
+using Quiz.Helpers;
 using System;
 using System.Collections.Generic;
 
@@ -60,6 +61,18 @@ public class ConsoleMenu : IMenu
         try
         {
             commands[selector].Execute();
+        }
+        catch (QuizInterruptedException)
+        {
+            Console.Clear();
+            Console.WriteLine();
+            Console.WriteLine("\tВикторина прервана!");
+            ConsoleWaiting.WaitAnyKey();
+            return false;
+        }
+        catch (BackToPreviousMenuException)
+        {
+            return false;
         }
         catch (Exception ex)
         {     

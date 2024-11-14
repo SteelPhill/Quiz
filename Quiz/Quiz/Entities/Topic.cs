@@ -1,6 +1,6 @@
 ﻿namespace Quiz.Entities;
 
-public enum Topics
+public enum Topic
 {
     None = 0,
     Geography = 1,

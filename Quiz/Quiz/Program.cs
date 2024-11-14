@@ -1,8 +1,10 @@
-﻿using Quiz.Database;
-using Quiz.Databases;
+﻿using Quiz.Databases;
 using Quiz.Entities;
 using Quiz.Helpers;
 using Quiz.Menus.ConsoleMenu;
+using Quiz.Commands.AuthorizationCommands;
+using Quiz.Commands.MainMenuCommands;
+using Quiz.Commands.SettingsCommands;
 using System;
 using System.Collections.Generic;
 

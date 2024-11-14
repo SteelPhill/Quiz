@@ -5,14 +5,14 @@ namespace Quiz.Entities;
 
 public class Question
 {
-    public Topics Topic { get; set; }
+    public Topic Topic { get; set; }
     public string QuestionText { get; set; }
     public List<(bool isCorrect, string answer)> Answers { get; set; }
 
     public Question() : this(default, string.Empty, new List<(bool, string)>()) { }
 
     public Question(
-        Topics topic,
+        Topic topic,
         string questionText,
         List<(bool isCorrect, string answer)> answers)
     {

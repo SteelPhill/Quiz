@@ -5,12 +5,12 @@ namespace Quiz.Entities;
 public class QuizResult
 {
     public DateTime Date { get; set; }
-    public Topics Topic { get; set; }
+    public Topic Topic { get; set; }
     public int Points { get; set; }
 
     private QuizResult() { }
 
-    public QuizResult(DateTime date, Topics topic, int points)
+    public QuizResult(DateTime date, Topic topic, int points)
     {
         Date = date;
         Topic = topic;

@@ -28,7 +28,7 @@ public static class OriginalXmlFilesCreator
     {
         List<Question> questions =
         [
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Какое вещество есть в оболочках клеток грибов и наружном скелете насекомых?",
             new List<(bool, string)>
             {
@@ -36,7 +36,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Хлорофил"),
                 (false, "Биотин")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется группа организмов, являющаяся сожительством грибов и водорослей?",
             new List<(bool, string)>
             {
@@ -44,7 +44,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Мхи"),
                 (false, "Плесень")
             }),
-            new(Topics.Biology, 
+            new(Topic.Biology, 
             "Как называются листья папоротников?",
             new List<(bool, string)>
             {
@@ -52,7 +52,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Вейрушки"),
                 (false, "Вертопласты")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Что из перечисленного не имеет запаса питательных веществ?",
             new List<(bool, string)>
             {
@@ -60,7 +60,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Семя"),
                 (false, "Плод")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Какое из перечисленных растений не относится к голосемянным растениям?",
             new List<(bool, string)>
             {
@@ -69,7 +69,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Кипарис"),
                 (false, "Берёза")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называются первые листья зародыша в семени покрытосеменных растений?",
             new List<(bool, string)>
             {
@@ -78,7 +78,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Семялистья"),
                 (false, "Листинки")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Чем являются колючки у кактусов?",
             new List<(bool, string)>
             {
@@ -86,14 +86,14 @@ public static class OriginalXmlFilesCreator
                 (false, "Видоизмененными корнями"),
                 (false, "Видоизмененными побегами")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "У кого пестичные и тычиночные цветки развиваются на одном растении?",
             new List<(bool, string)>
             {
                 (true, "У однодомных растений"),
                 (false, "У двудомных растений")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется сочный плод с мякотью, покрытый снаружи тонкой кожурой?",
             new List<(bool, string)>
             {
@@ -101,7 +101,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Орех"),
                 (false, "Фрукт")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "К какому семейству относятся рожь, пшеница и овес?",
             new List<(bool, string)>
             {
@@ -109,7 +109,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Хвойные"),
                 (false, "Мхи")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется процесс восстановления утраченных или поврежденных частей тела животных?",
             new List<(bool, string)>
             {
@@ -117,7 +117,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Реинтеграция"),
                 (false, "Ремобилизация")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется одновременное наличие у организма мужских и женских половых признаков?",
             new List<(bool, string)>
             {
@@ -125,7 +125,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Бесполость"),
                 (false, "Двуполость")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Какое животное не относится к головоногим моллюскам?",
             new List<(bool, string)>
             {
@@ -133,7 +133,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Каракатица"),
                 (false, "Осьминог")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется личинка бабочки?",
             new List<(bool, string)>
             {
@@ -141,7 +141,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Червяк"),
                 (false, "Жук")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Каких насекомых люди разводят для получения шелка?",
             new List<(bool, string)>
             {
@@ -150,7 +150,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Пауков"),
                 (false, "Пчёл")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется чувствительный орган рыб, позволяющий улавливать направление и силу тока воды?",
             new List<(bool, string)>
             {
@@ -159,7 +159,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Плавники"),
                 (false, "Глаз")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется раздел биологии, изучающий живые клетки?",
             new List<(bool, string)>
             {
@@ -167,7 +167,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Клетковедение"),
                 (false, "Цитономия")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется внутреннее содержание клетки исключая её ядерный аппарат?",
             new List<(bool, string)>
             {
@@ -175,7 +175,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Лизосома"),
                 (false, "Митохондрия")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Из скольких костей состоит скелет человека?",
             new List<(bool, string)>
             {
@@ -184,7 +184,7 @@ public static class OriginalXmlFilesCreator
                 (false, "около 300"),
                 (false, "около 400")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется врожденный возврат к признакам предка у человека?",
             new List<(bool, string)>
             {
@@ -192,7 +192,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Мутизм"),
                 (false, "Хиропризм")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называются клетки крови человека, имеющие ядра?",
             new List<(bool, string)>
             {
@@ -200,7 +200,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Эритроциты"),
                 (false, "Тромбоциты")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Людей с какой группой крови называют универсальными донорами?",
             new List<(bool, string)>
             {
@@ -209,7 +209,7 @@ public static class OriginalXmlFilesCreator
                 (false, "III(B)"),
                 (false, "IV(AB)")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называются кровеносные сосуды человека, по которым кровь идёт от сердца к органам и тканям?",
             new List<(bool, string)>
             {
@@ -217,7 +217,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Вены"),
                 (false, "Капилляры")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называется самый большой внутренний орган человека?",
             new List<(bool, string)>
             {
@@ -226,7 +226,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Лёгкие"),
                 (false, "Желудок")
             }),
-            new(Topics.Biology,
+            new(Topic.Biology,
             "Как называются белковые молекулы, ускоряющие протекание химических реакций в организме?",
             new List<(bool, string)>
             {
@@ -243,7 +243,7 @@ public static class OriginalXmlFilesCreator
     {
         List<Question> questions =
         [
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется река, протекающая через бразильские тропические леса?",
             new List<(bool, string)>
             {
@@ -252,7 +252,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Паранаиба"),
                 (false, "Токантинс")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какую страну также называют Нидерландами?",
             new List<(bool, string)>
             {
@@ -261,7 +261,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Португалия"),
                 (false, "Франция")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Где находится самый большой вулкан на Земле?",
             new List<(bool, string)>
             {
@@ -270,7 +270,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Гренландия"),
                 (false, "Таити")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется самая большая река, протекающая через Париж?",
             new List<(bool, string)>
             {
@@ -279,7 +279,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Рейн"),
                 (false, "Мозель")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Канады?",
             new List<(bool, string)>
             {
@@ -288,7 +288,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Калгари"),
                 (false, "Эдмонтон")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется самая длинная река Африки?",
             new List<(bool, string)>
             {
@@ -297,7 +297,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Конго"),
                 (false, "Лимпопо")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется самая большая страна в мире?",
             new List<(bool, string)>
             {
@@ -306,7 +306,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Индия"),
                 (false, "Колумбия")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "В какой стране находятся Великие пирамиды Гизы?",
             new List<(bool, string)>
             {
@@ -315,7 +315,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Индия"),
                 (false, "Колумбия")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какая единственная страна граничит с Великобританией?",
             new List<(bool, string)>
             {
@@ -324,7 +324,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Бельгия"),
                 (false, "Нидерланды")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какой штат США самый большой по площади?",
             new List<(bool, string)>
             {
@@ -333,7 +333,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Калифорния"),
                 (false, "Аризона")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какая самая большая столица в Северной Америке?",
             new List<(bool, string)>
             {
@@ -342,7 +342,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Вашингтон"),
                 (false, "Оттава")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какой стране принадлежат Канарские острова?",
             new List<(bool, string)>
             {
@@ -351,7 +351,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Марокко"),
                 (false, "Португалия")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какой город является самым густонаселенным в мире?",
             new List<(bool, string)>
             {
@@ -360,7 +360,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Тегеран"),
                 (false, "Чикаго")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется единственное море, не имеющее береговой линии?",
             new List<(bool, string)>
             {
@@ -369,7 +369,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Аравийское"),
                 (false, "Адриатическое")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица штата Нью-Йорк?",
             new List<(bool, string)>
             {
@@ -378,7 +378,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Сиракьюс"),
                 (false, "Кингстон")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Австралии?",
             new List<(bool, string)>
             {
@@ -387,7 +387,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Сидней"),
                 (false, "Брисбен")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица штата Техас?",
             new List<(bool, string)>
             {
@@ -396,7 +396,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Хьюстон"),
                 (false, "Арлингтон")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Столицей какой страны является Баку?",
             new List<(bool, string)>
             {
@@ -405,7 +405,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Гянджа"),
                 (false, "Агджабеди")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Белоруссии?",
             new List<(bool, string)>
             {
@@ -414,7 +414,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Брест"),
                 (false, "Витебск")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Камден и Брикстон являются районами какой столицы?",
             new List<(bool, string)>
             {
@@ -423,7 +423,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Стокгольм"),
                 (false, "Амстердам")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Камбоджи?",
             new List<(bool, string)>
             {
@@ -432,7 +432,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Сисопхон"),
                 (false, "Сиемреап")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Столицей какой страны является Вадуц?",
             new List<(bool, string)>
             {
@@ -441,7 +441,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Варшава"),
                 (false, "Венгрия")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Того?",
             new List<(bool, string)>
             {
@@ -450,7 +450,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Кара"),
                 (false, "Кпалиме")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Южной Кореи?",
             new List<(bool, string)>
             {
@@ -459,7 +459,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Пусан"),
                 (false, "Сувон")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "В какой океан впадает река Амазонка?",
             new List<(bool, string)>
             {
@@ -468,7 +468,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Индийский"),
                 (false, "Южный")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется столица Новой Зеландии?",
             new List<(bool, string)>
             {
@@ -477,7 +477,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Крайстчерч"),
                 (false, "Гамильтон")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Как называется замок, вдохновивший Уолта Диснея на создание замка Золушки в фильме 1950 года?",
             new List<(bool, string)>
             {
@@ -486,7 +486,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Тракайский"),
                 (false, "Кронборг")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "La Sagrada Familia — известная достопримечательность Испании. В каком городе он находится?",
             new List<(bool, string)>
             {
@@ -495,7 +495,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Севилья"),
                 (false, "Валенсия")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "Какой культовый мост расположен рядом с Лондонским Тауэром?",
             new List<(bool, string)>
             {
@@ -504,7 +504,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Вестминстерский"),
                 (false, "Миллениум")
             }),
-            new(Topics.Geography,
+            new(Topic.Geography,
             "В какой стране находятся Линии Наска?",
             new List<(bool, string)>
             {
@@ -522,7 +522,7 @@ public static class OriginalXmlFilesCreator
     {
         List<Question> questions =
         [
-            new(Topics.History,
+            new(Topic.History,
             "Как называлась столица Древнего Египта?",
             new List<(bool, string)>
             {
@@ -531,7 +531,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Каир"),
                 (false, "Асуан")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какому фараону была построена самая большая пирамида?",
             new List<(bool, string)>
             {
@@ -540,7 +540,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Джосеру"),
                 (false, "Эхнатон")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Как называли бога Солнца – самого могущественного бога Древнего Египта?",
             new List<(bool, string)>
             {
@@ -549,7 +549,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Анубис"),
                 (false, "Сет")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какому богу были посвящены Олимпийские игры в Древней Греции?",
             new List<(bool, string)>
             {
@@ -558,7 +558,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Посейдону"),
                 (false, "Аресу")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой древнегреческий поэт был автором поэм «Илиада» и «Одиссея»?",
             new List<(bool, string)>
             {
@@ -567,7 +567,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Аристофан"),
                 (false, "Алкей")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какое животное по легенде выкормило братьев Ромула и Рема – основателей Древнего Рима?",
             new List<(bool, string)>
             {
@@ -576,7 +576,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Лиса"),
                 (false, "Кабаниха")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Как назывался народ, издавна населявший Англию?",
             new List<(bool, string)>
             {
@@ -585,7 +585,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Норманны"),
                 (false, "Саксы")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "К какой королевской династии принадлежал Карл Великий?",
             new List<(bool, string)>
             {
@@ -594,7 +594,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Бурбоны"),
                 (false, "Веттины")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "В каких произведениях описывались приключения Робина Гуда?",
             new List<(bool, string)>
             {
@@ -603,7 +603,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Летописи"),
                 (false, "Былина")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Кем была создана огромная держава монголов?",
             new List<(bool, string)>
             {
@@ -612,7 +612,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Батыем"),
                 (false, "Угэдэйем")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "От какой империи Россия унаследовала двуглавого орла на гербе?",
             new List<(bool, string)>
             {
@@ -621,7 +621,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Османской"),
                 (false, "Британской")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Кто был первым русским царём?",
             new List<(bool, string)>
             {
@@ -630,7 +630,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Иван Калита"),
                 (false, "Михаил Романов")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой город был столицей России в XVII веке?",
             new List<(bool, string)>
             {
@@ -639,7 +639,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Санкт-Петербург"),
                 (false, "Нижний Новгород")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Первым русским царём из династии Романовых стал?",
             new List<(bool, string)>
             {
@@ -648,7 +648,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Алексей Михайлович"),
                 (false, "Иван Алексеевич")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Кто был первым русским императором?",
             new List<(bool, string)>
             {
@@ -657,7 +657,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Александр I"),
                 (false, "Николай I")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "В каком веке Россия стала империей?",
             new List<(bool, string)>
             {
@@ -666,7 +666,7 @@ public static class OriginalXmlFilesCreator
                 (false, "XIX"),
                 (false, "XVI")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой титул получил Наполеон в 1804 году?",
             new List<(bool, string)>
             {
@@ -675,7 +675,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Царь"),
                 (false, "Герцог")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "В начале царствования какого императора произошло восстание декабристов?",
             new List<(bool, string)>
             {
@@ -684,7 +684,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Павла I"),
                 (false, "Петра I")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой император отменил в 1861 году в России крепостное право?",
             new List<(bool, string)>
             {
@@ -693,7 +693,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Николай II"),
                 (false, "Павел I")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "В каком году в России произошли 2 революции?",
             new List<(bool, string)>
             {
@@ -702,7 +702,7 @@ public static class OriginalXmlFilesCreator
                 (false, "1905г."),
                 (false, "1907г.")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "В честь какого полководца немецкие захватчики назвали план нападения на СССР в 1941 году?",
             new List<(bool, string)>
             {
@@ -711,7 +711,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Наполеона"),
                 (false, "Македонского")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой день в Древней Руси называли «неделя»?",
             new List<(bool, string)>
             {
@@ -720,7 +720,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Понедельник"),
                 (false, "Пятница")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какую игру великий русский полководец А.В.Суворов утвердил как часть программы военной подготовки?",
             new List<(bool, string)>
             {
@@ -729,7 +729,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Шахматы"),
                 (false, "Прятки")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Сколько корон изображено на гербе России?",
             new List<(bool, string)>
             {
@@ -738,7 +738,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Четыре"),
                 (false, "Одна")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "У какого бога древние греки просили успешного плавания кораблю?",
             new List<(bool, string)>
             {
@@ -747,7 +747,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Аполлона"),
                 (false, "Ареса")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "На каком полуострове располагался Древний Рим?",
             new List<(bool, string)>
             {
@@ -756,7 +756,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Балканском"),
                 (false, "Скандинавском")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Как в средние века называлось земельное владение, за которое несли военную службу?",
             new List<(bool, string)>
             {
@@ -765,7 +765,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Титул"),
                 (false, "Латифундия")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Когда Москва впервые упомянута в летописи?",
             new List<(bool, string)>
             {
@@ -774,7 +774,7 @@ public static class OriginalXmlFilesCreator
                 (false, "1223г."),
                 (false, "1001г.")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какую реку перешёл Цезарь, тем самым начав войну с римским сенатом?",
             new List<(bool, string)>
             {
@@ -783,7 +783,7 @@ public static class OriginalXmlFilesCreator
                 (false, "Аньен"),
                 (false, "Ганик")
             }),
-            new(Topics.History,
+            new(Topic.History,
             "Какой город выдержал во время Великой Отечественной войны 900-дневную осаду немецких войск?",
             new List<(bool, string)>
             {

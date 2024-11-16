@@ -1,4 +1,4 @@
-﻿namespace Quiz.Entities;
+﻿namespace Quiz.Enums;
 
 public enum Topic
 {

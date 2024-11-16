@@ -1,4 +1,5 @@
 ﻿using Quiz.Entities;
+using Quiz.Enums;
 using Quiz.Helpers;
 using System;
 using System.Collections.Generic;

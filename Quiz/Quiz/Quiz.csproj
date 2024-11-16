@@ -56,8 +56,18 @@
     <Compile Include="Commands\MainMenuCommands\ShowRatingMenuCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\ShowResultsCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\ShowUsersCommand.cs" />
+    <Compile Include="Commands\NewQuizMenuCommands\NewBiologyQuizCommand.cs" />
+    <Compile Include="Commands\NewQuizMenuCommands\NewGeographyQuizCommand.cs" />
+    <Compile Include="Commands\NewQuizMenuCommands\NewHistoryQuizCommand.cs" />
+    <Compile Include="Commands\NewQuizMenuCommands\NewMixedQuizCommand.cs" />
+    <Compile Include="Commands\NewQuizMenuCommands\NewQuizCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangeBirthDateCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangePasswordCommand.cs" />
+    <Compile Include="Commands\ShowRatingMenuCommands\ShowBiologyRatingCommand.cs" />
+    <Compile Include="Commands\ShowRatingMenuCommands\ShowGeographyRatingCommand.cs" />
+    <Compile Include="Commands\ShowRatingMenuCommands\ShowHistoryRatingCommand.cs" />
+    <Compile Include="Commands\ShowRatingMenuCommands\ShowMixedRatingCommand.cs" />
+    <Compile Include="Commands\ShowRatingMenuCommands\ShowRatingCommand.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Databases\IQuestionDB.cs" />
     <Compile Include="Databases\IUserDB.cs" />
@@ -65,7 +75,7 @@
     <Compile Include="Databases\UserDB.cs" />
     <Compile Include="Entities\Question.cs" />
     <Compile Include="Entities\QuizResult.cs" />
-    <Compile Include="Entities\Topic.cs" />
+    <Compile Include="Enums\Topic.cs" />
     <Compile Include="Entities\User.cs" />
     <Compile Include="Exceptions\BackToPreviousMenuException.cs" />
     <Compile Include="Exceptions\QuizInterruptedException.cs" />

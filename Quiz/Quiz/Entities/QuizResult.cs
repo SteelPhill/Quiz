@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Quiz.Enums;
+using System;
 
 namespace Quiz.Entities;
 

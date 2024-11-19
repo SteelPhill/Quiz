@@ -6,7 +6,6 @@ namespace Quiz;
 
 public class NewHistoryQuizCommand : NewQuizCommand
 {
-    public NewHistoryQuizCommand(
-        string description, IUserDB userDB, IQuestionDB historyQuestionDB) : base(
-            description, Topic.History, userDB, historyQuestionDB) { }
+    public NewHistoryQuizCommand(string description, IUserDB userDB, IQuestionDB historyQuestionDB) : base(
+        description, Topic.History, userDB, historyQuestionDB) { }
 }

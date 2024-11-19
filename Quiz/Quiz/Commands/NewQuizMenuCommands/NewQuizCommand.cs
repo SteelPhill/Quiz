@@ -12,8 +12,7 @@ namespace Quiz.Commands.NewQuizCommands;
 
 public class NewQuizCommand : IMenuCommand
 {
-    private static readonly IQuestionMenu QuestionMenu = 
-        new ConsoleQuestionMenu();
+    private static readonly IQuestionMenu QuestionMenu = new ConsoleQuestionMenu();
 
     private readonly Topic topic;
     private readonly IUserDB userDB;
@@ -47,8 +46,7 @@ public class NewQuizCommand : IMenuCommand
         
         if (questions.Count < Constants.QuestionsInRound)
             throw new Exception("В настоящий момент пройти викторину по данной теме невозможно!" +
-                $"{Environment.NewLine}{Environment.NewLine}" +
-                "Причина: Количество существующих вопросов меньше 20-ти.");
+                $"{Environment.NewLine}{Environment.NewLine} Причина: Количество существующих вопросов меньше 20-ти.");
 
         var points = 0;
         Question question;

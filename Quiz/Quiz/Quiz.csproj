@@ -63,6 +63,10 @@
     <Compile Include="Commands\NewQuizMenuCommands\NewQuizCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangeBirthDateCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangePasswordCommand.cs" />
+    <Compile Include="Commands\ShowQuestionsMenuCommands\ShowBiologyQuestionsCommand.cs" />
+    <Compile Include="Commands\ShowQuestionsMenuCommands\ShowGeographyQuestionsCommand.cs" />
+    <Compile Include="Commands\ShowQuestionsMenuCommands\ShowHistoryQuestionsCommand.cs" />
+    <Compile Include="Commands\ShowQuestionsMenuCommands\ShowQuestionsCommand.cs" />
     <Compile Include="Commands\ShowRatingMenuCommands\ShowBiologyRatingCommand.cs" />
     <Compile Include="Commands\ShowRatingMenuCommands\ShowGeographyRatingCommand.cs" />
     <Compile Include="Commands\ShowRatingMenuCommands\ShowHistoryRatingCommand.cs" />

@@ -8,9 +8,10 @@ class NewMixedQuizCommand : NewQuizCommand
 {
     public NewMixedQuizCommand(
         string description, 
-        IUserDB userDB,
-        IQuestionDB biologyQuestionDB,
-        IQuestionDB geographyQuestionDB,
+        IUserDB userDB, 
+        IQuestionDB 
+        biologyQuestionDB, 
+        IQuestionDB geographyQuestionDB, 
         IQuestionDB historyQuestionDB) : base(
             description, 
             Topic.Mixed, 

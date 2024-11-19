@@ -12,10 +12,7 @@ public class Question
 
     public Question() : this(default, string.Empty, new List<(bool, string)>()) { }
 
-    public Question(
-        Topic topic,
-        string questionText,
-        List<(bool isCorrect, string answer)> answers)
+    public Question(Topic topic, string questionText, List<(bool isCorrect, string answer)> answers)
     {
         Topic = topic;
         QuestionText = questionText;

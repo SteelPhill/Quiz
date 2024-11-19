@@ -5,8 +5,7 @@ namespace Quiz.Menus.ConsoleQuestionMenu;
 
 public class ConsoleQuestionMenu : IQuestionMenu
 {
-    private static readonly IQuestionSelector QuestionSelector = 
-        new ConsoleQuestionSelector();
+    private static readonly IQuestionSelector QuestionSelector = new ConsoleQuestionSelector();
 
     public bool IsCorrect(Question question, int questionNumber)
     {
@@ -26,8 +25,7 @@ public class ConsoleQuestionMenu : IQuestionMenu
         Console.WriteLine();
         Console.WriteLine("\tОшибка!");
         Console.WriteLine();
-        Console.WriteLine($"Правильный ответ: {question.Answers
-            .Find(a => a.isCorrect).answer}");
+        Console.WriteLine($"Правильный ответ: {question.Answers.Find(a => a.isCorrect).answer}");
         return false;
     }
 }

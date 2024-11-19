@@ -7,9 +7,7 @@ public class ConsoleColorTextWriter : IColorTextWriter
     private readonly ConsoleColor backgroundColor;
     private readonly ConsoleColor foregroundColor;
 
-    public ConsoleColorTextWriter(
-        ConsoleColor backgroundColor,
-        ConsoleColor foregroundColor)
+    public ConsoleColorTextWriter(ConsoleColor backgroundColor, ConsoleColor foregroundColor)
     {
         this.backgroundColor = backgroundColor;
         this.foregroundColor = foregroundColor;

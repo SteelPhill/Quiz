@@ -12,14 +12,9 @@ public class User
 
     private User() { }
 
-    public User(string login, string password, DateTime birthDate)
-        : this(login, password, birthDate, new List<QuizResult>()) { }
+    public User(string login, string password, DateTime birthDate) : this(login, password, birthDate, []) { }
 
-    public User(
-        string login, 
-        string password, 
-        DateTime birthDate,
-        List<QuizResult> results)
+    public User(string login, string password, DateTime birthDate, List<QuizResult> results)
     {
         Login = login;
         Password = password;

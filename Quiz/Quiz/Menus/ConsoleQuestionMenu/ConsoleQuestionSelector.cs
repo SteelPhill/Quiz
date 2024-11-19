@@ -6,8 +6,7 @@ namespace Quiz.Menus.ConsoleQuestionMenu;
 
 public class ConsoleQuestionSelector : IQuestionSelector
 {
-    private static readonly IQuestionWriter QuestionWriter = 
-        new ConsoleQuestionWriter();
+    private static readonly IQuestionWriter QuestionWriter = new ConsoleQuestionWriter();
 
     public void Select(ref int selector, Question question, int questionNumber)
     {

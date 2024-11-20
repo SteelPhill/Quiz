@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Commands\AddQuestionMenuCommands\AddBiologyQuestionCommand.cs" />
+    <Compile Include="Commands\AddQuestionMenuCommands\AddGeographyQuestionCommand.cs" />
+    <Compile Include="Commands\AddQuestionMenuCommands\AddHistoryQuestionCommand.cs" />
+    <Compile Include="Commands\AddQuestionMenuCommands\AddQuestionCommand .cs" />
     <Compile Include="Commands\AuthorizationCommands\LoginCommand.cs" />
     <Compile Include="Commands\AuthorizationCommands\RegistrationCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\AddQuestionMenuCommand.cs" />

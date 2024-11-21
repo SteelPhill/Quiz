@@ -1,10 +1,9 @@
-﻿using Quiz.Databases;
-using Quiz.Entities;
+﻿using Quiz.Entities;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Quiz.Database;
+namespace Quiz.Databases;
 
 public class UserDB : IUserDB
 {

@@ -51,13 +51,7 @@
     <Compile Include="Commands\AddQuestionMenuCommands\AddQuestionCommand .cs" />
     <Compile Include="Commands\AuthorizationCommands\LoginCommand.cs" />
     <Compile Include="Commands\AuthorizationCommands\RegistrationCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\AddQuestionMenuCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\NewQuizMenuCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\RemoveQuestionMenuCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\RemoveUserCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\SettingsMenuCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\ShowQuestionsMenuCommand.cs" />
-    <Compile Include="Commands\MainMenuCommands\ShowRatingMenuCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\ShowResultsCommand.cs" />
     <Compile Include="Commands\MainMenuCommands\ShowUsersCommand.cs" />
     <Compile Include="Commands\NewQuizMenuCommands\NewBiologyQuizCommand.cs" />
@@ -65,6 +59,10 @@
     <Compile Include="Commands\NewQuizMenuCommands\NewHistoryQuizCommand.cs" />
     <Compile Include="Commands\NewQuizMenuCommands\NewMixedQuizCommand.cs" />
     <Compile Include="Commands\NewQuizMenuCommands\NewQuizCommand.cs" />
+    <Compile Include="Commands\RemoveQuestionMenuCommands\RemoveBiologyQuestionCommand.cs" />
+    <Compile Include="Commands\RemoveQuestionMenuCommands\RemoveGeographyQuestionCommand.cs" />
+    <Compile Include="Commands\RemoveQuestionMenuCommands\RemoveHistoryQuestionCommand.cs" />
+    <Compile Include="Commands\RemoveQuestionMenuCommands\RemoveQuestionCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangeBirthDateCommand.cs" />
     <Compile Include="Commands\SettingsMenuCommands\ChangePasswordCommand.cs" />
     <Compile Include="Commands\ShowQuestionsMenuCommands\ShowBiologyQuestionsCommand.cs" />
@@ -76,6 +74,7 @@
     <Compile Include="Commands\ShowRatingMenuCommands\ShowHistoryRatingCommand.cs" />
     <Compile Include="Commands\ShowRatingMenuCommands\ShowMixedRatingCommand.cs" />
     <Compile Include="Commands\ShowRatingMenuCommands\ShowRatingCommand.cs" />
+    <Compile Include="Commands\SubmenuExecuterCommand.cs" />
     <Compile Include="Constants.cs" />
     <Compile Include="Databases\IQuestionDB.cs" />
     <Compile Include="Databases\IUserDB.cs" />

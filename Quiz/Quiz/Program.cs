@@ -1,15 +1,17 @@
-﻿using Quiz.Commands.AddQuestionCommands;
+﻿using Quiz.Commands;
+using Quiz.Commands.AddQuestionMenuCommands;
 using Quiz.Commands.AuthorizationCommands;
 using Quiz.Commands.MainMenuCommands;
-using Quiz.Commands.RemoveQuestionCommands;
+using Quiz.Commands.NewQuizMenuCommands;
+using Quiz.Commands.RemoveQuestionMenuCommands;
 using Quiz.Commands.SettingsCommands;
 using Quiz.Commands.ShowQuestionsMenuCommands;
+using Quiz.Commands.ShowRatingMenuCommands;
 using Quiz.Databases;
 using Quiz.Entities;
 using Quiz.Enums;
 using Quiz.Helpers;
 using Quiz.Menus.ConsoleMenu;
-using Quiz.ShowRatingCommands;
 using System;
 using System.Collections.Generic;
 
@@ -66,10 +68,10 @@ public class Program
         IQuestionDB historyQuestionDB)
     {
         IMenu newQuizSubmenu = new ConsoleMenu("Выберите тему:");
-        newQuizSubmenu.AddCommand(new NewBiologyQuizCommand("Биология", userDB, biologyQuestionDB));
-        newQuizSubmenu.AddCommand(new NewGeographyQuizCommand("География", userDB, geographyQuestionDB));
-        newQuizSubmenu.AddCommand(new NewHistoryQuizCommand("История", userDB, historyQuestionDB));
-        newQuizSubmenu.AddCommand(new NewMixedQuizCommand("Смешанная", userDB, biologyQuestionDB,
+        newQuizSubmenu.AddCommand(new NewBiologyQuizCommand("Биология", biologyQuestionDB));
+        newQuizSubmenu.AddCommand(new NewGeographyQuizCommand("География", geographyQuestionDB));
+        newQuizSubmenu.AddCommand(new NewHistoryQuizCommand("История", historyQuestionDB));
+        newQuizSubmenu.AddCommand(new NewMixedQuizCommand("Смешанная", biologyQuestionDB,
             geographyQuestionDB, historyQuestionDB));
 
         IMenu showRatingSubmenu = new ConsoleMenu("Выберите тему:");
@@ -78,9 +80,9 @@ public class Program
         showRatingSubmenu.AddCommand(new ShowHistoryRatingCommand("История", Topic.History, userDB));
         showRatingSubmenu.AddCommand(new ShowMixedRatingCommand("Смешанная викторина", Topic.Mixed, userDB));
 
-        IMenu settingSubmenu = new ConsoleMenu("Настройки");
-        settingSubmenu.AddCommand(new ChangeBirthDateCommand("Изменить дату рождения"));
-        settingSubmenu.AddCommand(new ChangePasswordCommand("Изменить пароль"));
+        IMenu settingsSubmenu = new ConsoleMenu("Настройки");
+        settingsSubmenu.AddCommand(new ChangeBirthDateCommand("Изменить дату рождения"));
+        settingsSubmenu.AddCommand(new ChangePasswordCommand("Изменить пароль"));
 
         IMenu showQuestionsSubmenu = new ConsoleMenu("Выберите тему:");
         showQuestionsSubmenu.AddCommand(new ShowBiologyQuestionsCommand("Биология", biologyQuestionDB));
@@ -101,7 +103,7 @@ public class Program
         mainMenu.AddCommand(new SubmenuExecuterCommand("Новая викторина", newQuizSubmenu));
         mainMenu.AddCommand(new ShowResultsCommand("Результаты"));
         mainMenu.AddCommand(new SubmenuExecuterCommand("Рейтинг", showRatingSubmenu));
-        mainMenu.AddCommand(new SubmenuExecuterCommand("Настройки", settingSubmenu));
+        mainMenu.AddCommand(new SubmenuExecuterCommand("Настройки", settingsSubmenu));
         mainMenu.AddCommand(new ShowUsersCommand("Список пользователей", userDB));
         mainMenu.AddCommand(new RemoveUserCommand("Удалить пользователя", userDB));
         mainMenu.AddCommand(new SubmenuExecuterCommand("Список вопросов", showQuestionsSubmenu));

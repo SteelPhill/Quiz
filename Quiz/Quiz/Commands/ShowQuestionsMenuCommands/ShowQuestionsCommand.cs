@@ -22,6 +22,13 @@ public class ShowQuestionsCommand : IMenuCommand
         Console.WriteLine($"Тема: {Description}");
         Console.WriteLine();
 
+        if (questionDB.Questions.Count == 0)
+        {
+            Console.WriteLine("Вопросы по данной теме отсутствуют!");
+            ConsoleWaiting.WaitAnyKey();
+            return;
+        }
+
         Console.WriteLine("Список вопросов:");
 
         foreach (var question in questionDB.Questions)

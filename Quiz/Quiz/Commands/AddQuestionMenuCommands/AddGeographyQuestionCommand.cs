@@ -1,7 +1,7 @@
 ﻿using Quiz.Databases;
 using Quiz.Enums;
 
-namespace Quiz.Commands.AddQuestionCommands;
+namespace Quiz.Commands.AddQuestionMenuCommands;
 
 public class AddGeographyQuestionCommand : AddQuestionCommand
 {

@@ -4,7 +4,7 @@ using Quiz.Helpers;
 using Quiz.Menus.ConsoleMenu;
 using System;
 
-namespace Quiz.Commands.RemoveQuestionCommands;
+namespace Quiz.Commands.RemoveQuestionMenuCommands;
 
 public class RemoveQuestionCommand : IMenuCommand
 {
@@ -26,6 +26,14 @@ public class RemoveQuestionCommand : IMenuCommand
         foreach (var t in Utile.TopicsStringValues)
             if (topic == t.Key)
                 Console.WriteLine(t.Value);
+
+        if (questionDB.Questions.Count == 0)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Вопросы по данной теме отсутствуют!");
+            ConsoleWaiting.WaitAnyKey();
+            return;
+        }
 
         Console.WriteLine();
 

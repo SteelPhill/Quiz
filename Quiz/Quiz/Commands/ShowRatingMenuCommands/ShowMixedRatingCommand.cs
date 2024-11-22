@@ -1,10 +1,10 @@
-﻿using Quiz.Commands.ShowRatingMenuCommands;
-using Quiz.Databases;
+﻿using Quiz.Databases;
 using Quiz.Enums;
 
-namespace Quiz.ShowRatingCommands;
+namespace Quiz.Commands.ShowRatingMenuCommands;
 
 public class ShowMixedRatingCommand : ShowRatingCommand
 {
-    public ShowMixedRatingCommand(string description, Topic topic, IUserDB userDB) : base(description, topic, userDB) { }
+    public ShowMixedRatingCommand(string description, Topic topic, IUserDB userDB) : base(
+        description, topic, userDB) { }
 }

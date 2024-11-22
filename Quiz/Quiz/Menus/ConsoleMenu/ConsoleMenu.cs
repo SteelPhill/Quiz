@@ -66,7 +66,7 @@ public class ConsoleMenu : IMenu
         {
             Console.Clear();
             Console.WriteLine();
-            Console.WriteLine("\tВикторина прервана!");
+            Console.WriteLine("Викторина прервана!");
             ConsoleWaiting.WaitAnyKey();
             return false;
         }

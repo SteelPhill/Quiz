@@ -8,27 +8,21 @@ using Quiz.Databases;
 using Quiz.Helpers;
 using Quiz.Enums;
 
-namespace Quiz.Commands.NewQuizCommands;
+namespace Quiz.Commands.NewQuizMenuCommands;
 
 public class NewQuizCommand : IMenuCommand
 {
     private static readonly IQuestionMenu QuestionMenu = new ConsoleQuestionMenu();
 
     private readonly Topic topic;
-    private readonly IUserDB userDB;
     private readonly IQuestionDB[] questionDBs;
 
     public string Description { get; }
 
-    public NewQuizCommand(
-        string description,
-        Topic topic,
-        IUserDB userDB,
-        params IQuestionDB[] questionDBs)
+    public NewQuizCommand(string description, Topic topic, params IQuestionDB[] questionDBs)
     {
         Description = description;
         this.topic = topic;
-        this.userDB = userDB;
         this.questionDBs = questionDBs;
     }
 
@@ -46,7 +40,7 @@ public class NewQuizCommand : IMenuCommand
         
         if (questions.Count < Constants.QuestionsInRound)
             throw new Exception("В настоящий момент пройти викторину по данной теме невозможно!" +
-                $"{Environment.NewLine}{Environment.NewLine} Причина: Количество существующих вопросов меньше 20-ти.");
+                $"{Environment.NewLine}{Environment.NewLine}Причина: Количество существующих вопросов меньше 20-ти.");
 
         var points = 0;
         Question question;
@@ -71,8 +65,7 @@ public class NewQuizCommand : IMenuCommand
         Utile.CurrentUser.AddQuizResult(new QuizResult(DateTime.Now, topic, points));
 
         Console.Clear();
-        Console.WriteLine();
-        Console.WriteLine(" Викторина окончена!");
+        Console.WriteLine("Викторина окончена!");
         Console.WriteLine();
         Console.WriteLine($"Правильных ответов: {points}");
         ConsoleWaiting.WaitAnyKey();

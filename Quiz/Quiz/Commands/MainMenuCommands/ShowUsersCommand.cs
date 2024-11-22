@@ -19,6 +19,14 @@ public class ShowUsersCommand : IMenuCommand
 
     public void Execute()
     {
+        if (userDB.Users.Count <= 1)
+        {
+            Console.WriteLine();
+            Console.WriteLine("Нет зарегистрированных пользователей!");
+            ConsoleWaiting.WaitAnyKey();
+            return;
+        }
+
         Console.WriteLine("Список зарегистрированных пользователей:");
 
         for (var i = 1; i < userDB.Users.Count; i++)

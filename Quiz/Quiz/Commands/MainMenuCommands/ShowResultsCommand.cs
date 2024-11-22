@@ -21,11 +21,11 @@ public class ShowResultsCommand : IMenuCommand
         Console.WriteLine("Результаты пройденных викторин:");
         Console.WriteLine();
 
-        foreach (var r in Utile.CurrentUser.Results)
+        foreach (var quizResult in Utile.CurrentUser.Results)
         {
-            Console.Write($"{r.Date.ToShortDateString()} ");         
-            Console.Write($"{r.TopicToString()}\t-> ");
-            Console.WriteLine($"{r.Points} из {Constants.QuestionsInRound}");
+            Console.Write($"{quizResult.Date.ToShortDateString()} ");         
+            Console.Write($"{quizResult.TopicToString()}\t-> ");
+            Console.WriteLine($"{quizResult.Points} из {Constants.QuestionsInRound}");
         }
 
         if (Utile.CurrentUser.Results.Count == 0)

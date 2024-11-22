@@ -1,6 +1,6 @@
 ﻿using Quiz.Menus.ConsoleMenu;
 
-namespace Quiz.Commands.MainMenuCommands;
+namespace Quiz.Commands;
 
 public class SubmenuExecuterCommand : IMenuCommand
 {

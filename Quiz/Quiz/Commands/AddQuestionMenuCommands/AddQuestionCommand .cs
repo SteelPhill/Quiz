@@ -6,7 +6,7 @@ using Quiz.Menus.ConsoleMenu;
 using System;
 using System.Collections.Generic;
 
-namespace Quiz.Commands.AddQuestionCommands;
+namespace Quiz.Commands.AddQuestionMenuCommands;
 
 public class AddQuestionCommand : IMenuCommand
 {

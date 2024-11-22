@@ -1,11 +1,10 @@
-﻿using Quiz.Commands.NewQuizCommands;
-using Quiz.Databases;
+﻿using Quiz.Databases;
 using Quiz.Enums;
 
-namespace Quiz;
+namespace Quiz.Commands.NewQuizMenuCommands;
 
 public class NewHistoryQuizCommand : NewQuizCommand
 {
-    public NewHistoryQuizCommand(string description, IUserDB userDB, IQuestionDB historyQuestionDB) : base(
-        description, Topic.History, userDB, historyQuestionDB) { }
+    public NewHistoryQuizCommand(string description, IQuestionDB historyQuestionDB) : base(
+        description, Topic.History, historyQuestionDB) { }
 }

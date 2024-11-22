@@ -34,7 +34,7 @@ public class ConsoleUserDataReader : IUserDataReader
 
     public bool TryReadDate(out DateTime date)
     {
-        string line = Console.ReadLine();
+        var line = Console.ReadLine();
 
         if (string.IsNullOrWhiteSpace(line))
         {

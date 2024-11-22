@@ -15,7 +15,7 @@ public class ConsoleQuestionSelector : IQuestionSelector
             Console.Clear();
             QuestionWriter.Write(ref selector, question, questionNumber);
 
-            var key = Console.ReadKey().Key;
+            var key = Console.ReadKey(intercept: true).Key;
 
             if (key == ConsoleKey.DownArrow && selector < question.Answers.Count - 1)
                 selector++;

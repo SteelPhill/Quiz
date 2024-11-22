@@ -1,7 +1,7 @@
 ﻿using Quiz.Databases;
 using Quiz.Enums;
 
-namespace Quiz.Commands.RemoveQuestionCommands;
+namespace Quiz.Commands.RemoveQuestionMenuCommands;
 
 public class RemoveBiologyQuestionCommand : RemoveQuestionCommand
 {
